@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-image: url('/images/back.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column;
+            margin-top: 18%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        .container p{
+            font-size: 34px;
+            margin-top:-16px;
+        }
+        .btn{
+            height: 40px;
+            width: 120px;
+            border-radius: 34px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        .btn:hover{
+            background: #ffffff;
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) { 
+            .container h1 {
+                 font-size: 2rem; 
+                }
+             .container p { 
+                font-size: 1.2rem; 
+            } 
+            .btn { width: 100px; font-size: 1rem; 
+            }
+        } 
+        @media (max-width: 480px) {
+            .container h1 {
+                font-size: 1.5rem; 
+            }
+             .container p {
+                font-size: 1rem; 
+            }
+            .btn {
+                width: 90px; height: 35px; font-size: 0.9rem; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EXPLORE OUR PHOTO COLLECTION!</h1>
+        <P>where memories come to life</P>
+        <a href="main.html"><button class="btn">go</button></a>
+    </div> 
+</body>
+</html>
